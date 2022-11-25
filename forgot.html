@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forpass.css">
+    <title>Password</title>
+</head>
+<style>
+    html{
+        background-color: antiquewhite;
+        padding: 250px;
+    }
+    body{
+        max-height: 1000px;
+        text-align: center;
+    }
+    .grid-container{
+
+        padding: 5px;
+        max-height: 1000px;
+
+    }
+    .container{
+        justify-content: center;
+
+        max-height: 1000px;
+    }
+    h3{
+        font-size: 50px;
+        font-weight: 900;
+    }
+    #fe{
+        width:300px;
+        height: 50px;
+    }
+    #int{
+        background-color: gray;
+        height: 50px;
+        width: 100px;
+    }
+
+</style>
+<body>
+    <section class="grid-container">
+        <div class="container">
+            <div id="forgot" class="comm">
+                <h3>Forgot Password</h3>
+                <div>
+                    <input id="fe" type="email" placeholder="Email" autocomplete="off" required/>
+                    <input id="int" type="submit" onclick="forgot()" value="Submit"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <script>
+        function forgot(){
+            event.preventDefault();
+            var email = document.getElementById("fe").value;
+            if(emailArray.indexOf(email) == -1){
+                if (email == ""){
+                    alert("Email required.");
+                    return ;
+                }
+                alert("Email does not exist.");
+                return ;
+            }
+            alert("email is send to your email check it in 24hr. \n Thanks");
+            document.getElementById("fe").value="";
+        }
+    </script>
+    
+</body>
+</html>

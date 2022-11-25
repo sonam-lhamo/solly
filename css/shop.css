@@ -1,0 +1,84 @@
+#page-header {
+    background-image: url(../img/header.jpg);
+    width: 100%;
+    height: 48vh;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    /* text-align: center; */
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2, 
+#page-header p{
+    color: #000;
+}
+
+#pagination {
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#pagination a{
+    font-size: 16px;
+    font-weight: 600;
+} 
+#prodedetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodedetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodedetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodedetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodedetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodedetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodedetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodedetails .single-pro-details button {
+    background: #088178;
+    color: #fff;
+} 
+#prodedetails .single-pro-details input:focus{
+    outline: none;
+}
+#prodedetails .single-pro-details span{
+    line-height: 25px;
+}

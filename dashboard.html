@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div><i><img class="logo" src="img/logo.png" alt=""></i></div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard.html" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                <a href="home.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-project-diagram me-2"></i>Home</a>
+                <a href="tasks.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-chart-line me-2"></i>Staff Task And Tour</a>
+                <a href="human resource.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-paperclip me-2"></i>Human Resources and Help</a>
+                <a href="leave application.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-shopping-cart me-2"></i>Leave Application</a>
+                <a href="shop.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-gift me-2"></i>Products</a>
+                <a href="sproduct.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                          class="fas fa-gift me-2"></i>Products Details</a>
+                <a href="calender.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-comment-dots me-2"></i>Calender</a>
+                <a href="resignation.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-map-marker-alt me-2"></i>Resignation</a>
+                <a href="promotion.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                          class="fas fa-map-marker-alt me-2"></i>Promotion</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                        class="fas fa-power-off me-2"></i>Logout</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0">Dashboard</h2>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="" href="" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="profile.html"><i class="fas fa-user me-2">Allen Solly</i></a>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+                  <section>
+                    <!-- single number -->
+                    <article>
+                      <span class="number" data-value="500">0</span>
+                      <p>Succeeded Projects</p>
+                    </article>
+                    <!-- end of single number -->
+                    <!-- single number -->
+                    <article>
+                      <span class="number" data-value="17140">0</span>
+                      <p>Working Hours Spent</p>
+                    </article>
+                    <!-- end of single number -->
+                    <!-- single number -->
+                    <article>
+                      <span class="number" data-value="1500">0</span>
+                      <p>Happy Clients</p>
+                    </article>
+                    <!-- end of single number -->
+                  </section>
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">720</h3>
+                                <p class="fs-5">Products</p>
+                            </div>
+                            <i class="fas fa-gift fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">4920</h3>
+                                <p class="fs-5">Sales</p>
+                            </div>
+                            <i
+                                class="fas fa-hand-holding-usd fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">3899</h3>
+                                <p class="fs-5">Delivery</p>
+                            </div>
+                            <i class="fas fa-truck fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">%25</h3>
+                                <p class="fs-5">Increase</p>
+                            </div>
+                            <i class="fas fa-chart-line fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <div class="card">
+                        <div class="card-header">
+                          <span><i class="bi bi-table me-2"></i></span> STAFF Table
+                        </div>
+                        <div class="card-body">
+                          <div class="table-responsive">
+                            <table
+                              id="example"
+                              class="table table-striped data-table"
+                              style="width: 100%"
+                            >
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Position</th>
+                                  <th>Store</th>
+                                  <th>Age</th>
+                                  <th>Start date</th>
+                                  <th>Salary</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Tandin</td>
+                                  <td>Director</td>
+                                  <td>Thimphu</td>
+                                  <td>60</td>
+                                  <td>2011/04/25</td>
+                                  <td>Nu.320,800</td>
+                                </tr>
+                                <tr>
+                                  <td>Pema Wangmo</td>
+                                  <td>Accountant</td>
+                                  <td>Punakha</td>
+                                  <td>45</td>
+                                  <td>2011/07/25</td>
+                                  <td>Nu.170,750</td>
+                                </tr>
+                                <tr>
+                                  <td>Tandin Wangmo</td>
+                                  <td>Manager</td>
+                                  <td>Thimphu</td>
+                                  <td>35</td>
+                                  <td>2014/01/12</td>
+                                  <td>Nu.86,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Chime Dorji</td>
+                                  <td>Manager</td>
+                                  <td>Paro</td>
+                                  <td>22</td>
+                                  <td>2014/03/29</td>
+                                  <td>Nu.433,060</td>
+                                </tr>
+                                <tr>
+                                  <td>Rigsel Dorji</td>
+                                  <td>Accountant</td>
+                                  <td>Paro</td>
+                                  <td>45</td>
+                                  <td>2008/11/28</td>
+                                  <td>Nu.62,700</td>
+                                </tr>
+                                <tr>
+                                  <td>Pema Yangzom</td>
+                                  <td>Manager</td>
+                                  <td>Thimphu</td>
+                                  <td>48</td>
+                                  <td>2010/12/02</td>
+                                  <td>Nu.72,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Sonam Tenzin</td>
+                                  <td>Sales Assistant</td>
+                                  <td>Thimphu</td>
+                                  <td>28</td>
+                                  <td>2014/08/06</td>
+                                  <td>Nu.47,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Karma Seldon</td>
+                                  <td>Sales girl</td>
+                                  <td>Paro</td>
+                                  <td>21</td>
+                                  <td>2016/10/14</td>
+                                  <td>Nu.27,900</td>
+                                </tr>
+                                <tr>
+                                  <td>Chime Wangmo</td>
+                                  <td>Sales girl</td>
+                                  <td>Thimphu</td>
+                                  <td>23</td>
+                                  <td>2014/09/15</td>
+                                  <td>Nu.28,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Soniya </td>
+                                  <td>Accountant</td>
+                                  <td>Thimphu</td>
+                                  <td>35</td>
+                                  <td>201108/12/13</td>
+                                  <td>Nu.45,600</td>
+                                </tr>
+                                <tr>
+                                  <td>Tashi Lham</td>
+                                  <td>Manager</td>
+                                  <td>Paro</td>
+                                  <td>25</td>
+                                  <td>2013/12/19</td>
+                                  <td>Nu.90,560</td>
+                                </tr>
+                                <tr>
+                                  <td>Wangmo</td>
+                                  <td>Sales Girl</td>
+                                  <td>Thimphu</td>
+                                  <td>22</td>
+                                  <td>2013/03/03</td>
+                                  <td>Nu.23,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Sonam Yangzom</td>
+                                  <td>Sales Girl</td>
+                                  <td>Punakha</td>
+                                  <td>26</td>
+                                  <td>2012/10/16</td>
+                                  <td>Nu.24,600</td>
+                                </tr>
+                                <tr>
+                                  <td>Sonam Peldon</td>
+                                  <td>Sales Girl</td>
+                                  <td>Thimphu</td>
+                                  <td>23</td>
+                                  <td>2012/12/18</td>
+                                  <td>Nu.25,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Kinley</td>
+                                  <td>Sales Boy</td>
+                                  <td>Mongar</td>
+                                  <td>19</td>
+                                  <td>2015/03/17</td>
+                                  <td>Nu.25,750</td>
+                                </tr>
+                                <tr>
+                                  <td>Migmar</td>
+                                  <td>Sale Boys</td>
+                                  <td>Paro</td>
+                                  <td>24</td>
+                                  <td>2012/11/27</td>
+                                  <td>Nu.26,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Sanam</td>
+                                  <td>Sales Girls</td>
+                                  <td>Mongar</td>
+                                  <td>24</td>
+                                  <td>2015/06/09</td>
+                                  <td>Nu.25,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Pema Lhaden</td>
+                                  <td>Sale Girl</td>
+                                  <td>Mongar</td>
+                                  <td>23</td>
+                                  <td>2013/04/10</td>
+                                  <td>Nu.27,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Sonam Choki</td>
+                                  <td>Sales Girls</td>
+                                  <td>Thimphu</td>
+                                  <td>23</td>
+                                  <td>2012/10/13</td>
+                                  <td>Nu.26,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Tshendu</td>
+                                  <td>Sales Girls</td>
+                                  <td>Paro</td>
+                                  <td>25</td>
+                                  <td>2012/09/26</td>
+                                  <td>Nu.27,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Jigme Dorji</td>
+                                  <td>Designer</td>
+                                  <td>Thimphu</td>
+                                  <td>30</td>
+                                  <td>2011/09/03</td>
+                                  <td>Nu.45,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Yeshi Wangmo</td>
+                                  <td>Designer</td>
+                                  <td>Punakha</td>
+                                  <td>40</td>
+                                  <td>2009/06/25</td>
+                                  <td>Nu.75,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Tandin Dema </td>
+                                  <td>Designer</td>
+                                  <td>Thimphu</td>
+                                  <td>31</td>
+                                  <td>2011/12/12</td>
+                                  <td>Nu.67,450</td>
+                                </tr>
+                                <tr>
+                                  <td>Dorji Dema</td>
+                                  <td>Sales Assistant</td>
+                                  <td>Paro</td>
+                                  <td>23</td>
+                                  <td>2010/09/20</td>
+                                  <td>Nu.25,600</td>
+                                </tr>
+                                <tr>
+                                  <td>Kinley Dema</td>
+                                  <td>Designer</td>
+                                  <td>Thimphu</td>
+                                  <td>37</td>
+                                  <td>2009/10/09</td>
+                                  <td>Nu.90,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Nima Wangmo</td>
+                                  <td>Sales Girl</td>
+                                  <td>Paro</td>
+                                  <td>22</td>
+                                  <td>2010/12/22</td>
+                                  <td>Nu.22,575</td>
+                                </tr>
+                                <tr>
+                                  <td>Tenzin Dorji</td>
+                                  <td>Sales boy</td>
+                                  <td>Punakha</td>
+                                  <td>24</td>
+                                  <td>2010/11/14</td>
+                                  <td>Nu.27,650</td>
+                                </tr>
+                                <tr>
+                                  <td>Sonam Lhaden</td>
+                                  <td>Sales girl</td>
+                                  <td>Punakha</td>
+                                  <td>28</td>
+                                  <td>2011/06/07</td>
+                                  <td>Nu.26,850</td>
+                                </tr>
+                                <tr>
+                                  <td>Cheki</td>
+                                  <td>Sales Boy</td>
+                                  <td>Thimphu</td>
+                                  <td>26</td>
+                                  <td>2010/03/11</td>
+                                  <td>Nu.24,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Karma Tenzin</td>
+                                  <td>Sales Boy</td>
+                                  <td>Mongar</td>
+                                  <td>20</td>
+                                  <td>2011/08/14</td>
+                                  <td>Nu.23,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Tshering Dorji</td>
+                                  <td>Manager</td>
+                                  <td>Punakha</td>
+                                  <td>37</td>
+                                  <td>2011/06/02</td>
+                                  <td>Nu.55,400</td>
+                                </tr>
+                                <tr>
+                                  <td>Sonam Tashi</td>
+                                  <td>Accountant</td>
+                                  <td>Thimphu</td>
+                                  <td>53</td>
+                                  <td>2009/10/22</td>
+                                  <td>Nu.80,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Sangay</td>
+                                  <td>Sales boy</td>
+                                  <td>Paro</td>
+                                  <td>25</td>
+                                  <td>2011/05/07</td>
+                                  <td>Nu.25,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Chador</td>
+                                  <td>Sales Girl</td>
+                                  <td>Thimphu</td>
+                                  <td>22</td>
+                                  <td>2008/10/26</td>
+                                  <td>Nu.25,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Wangda</td>
+                                  <td>Sales Assistent</td>
+                                  <td>Punakha</td>
+                                  <td>24</td>
+                                  <td>2011/03/09</td>
+                                  <td>Nu.24,050</td>
+                                </tr>
+                                <tr>
+                                  <td>Dema</td>
+                                  <td>Sales Girl</td>
+                                  <td>Mongar</td>
+                                  <td>27</td>
+                                  <td>2009/12/09</td>
+                                  <td>Nu.25,675</td>
+                                </tr>
+                                <tr>
+                                  <td>Howard Hatfield</td>
+                                  <td>Office Manager</td>
+                                  <td>Mongar</td>
+                                  <td>51</td>
+                                  <td>2008/12/16</td>
+                                  <td>Nu.164,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Jigme</td>
+                                  <td>Sale Assistant</td>
+                                  <td>Mongar</td>
+                                  <td>24</td>
+                                  <td>2013/02/12</td>
+                                  <td>Nu.24,850</td>
+                                </tr>
+                                <tr>
+                                  <td>Chimme</td>
+                                  <td>Sales Girl</td>
+                                  <td>Thimphu</td>
+                                  <td>23</td>
+                                  <td>2013/02/14</td>
+                                  <td>Nu.22,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Hemanta</td>
+                                  <td>Accountant</td>
+                                  <td>Mongar</td>
+                                  <td>37</td>
+                                  <td>2010/12/11</td>
+                                  <td>Nu.78,200</td>
+                                </tr>
+                                <tr>
+                                  <td>Sonam</td>
+                                  <td>Director</td>
+                                  <td>Punakha</td>
+                                  <td>65</td>
+                                  <td>2011/09/26</td>
+                                  <td>Nu.89,750</td>
+                                </tr>
+                                <tr>
+                                  <td>Dawa</td>
+                                  <td>Sale Boy</td>
+                                  <td>Thimphu</td>
+                                  <td>24</td>
+                                  <td>2013/02/03</td>
+                                  <td>Nu.24,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Yangden</td>
+                                  <td>Sales boy</td>
+                                  <td>Paro</td>
+                                  <td>26</td>
+                                  <td>2013/05/03</td>
+                                  <td>Nu.23,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Kencho</td>
+                                  <td>Designer</td>
+                                  <td>Paro</td>
+                                  <td>37</td>
+                                  <td>2010/08/19</td>
+                                  <td>Nu.89,575</td>
+                                </tr>
+                                <tr>
+                                  <td>Ninsel</td>
+                                  <td>Sales Girl</td>
+                                  <td>Paro</td>
+                                  <td>24</td>
+                                  <td>2013/08/11</td>
+                                  <td>Nu.24,540</td>
+                                </tr>
+                                <tr>
+                                  <td>Passang</td>
+                                  <td>Sales Boy</td>
+                                  <td>Paro</td>
+                                  <td>24</td>
+                                  <td>2012/07/07</td>
+                                  <td>Nu.25,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Lhamo</td>
+                                  <td>Sales Girl</td>
+                                  <td>Thimphu</td>
+                                  <td>23</td>
+                                  <td>2012/04/09</td>
+                                  <td>Nu.25,575</td>
+                                </tr>
+                                <tr>
+                                  <td>Rinzin</td>
+                                  <td>Sales Boy</td>
+                                  <td>Punakha</td>
+                                  <td>24</td>
+                                  <td>2012/01/04</td>
+                                  <td>Nu.25,250</td>
+                                </tr>
+                                <tr>
+                                  <td>Rinchen Dema</td>
+                                  <td>Sales Girl</td>
+                                  <td>Punakha</td>
+                                  <td>25</td>
+                                  <td>2012/06/01</td>
+                                  <td>Nu.25,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Jigme Dema</td>
+                                  <td>Sales Girl</td>
+                                  <td>Punakha</td>
+                                  <td>23</td>
+                                  <td>2013/02/01</td>
+                                  <td>Nu.25,650</td>
+                                </tr>
+                                <tr>
+                                  <td>Ganga</td>
+                                  <td>Sales Assistant</td>
+                                  <td>Thimphu</td>
+                                  <td>26</td>
+                                  <td>2011/12/06</td>
+                                  <td>Nu.25,600</td>
+                                </tr>
+                                <tr>
+                                  <td>Tshewang</td>
+                                  <td>Manager</td>
+                                  <td>Thimphu</td>
+                                  <td>47</td>
+                                  <td>2011/03/21</td>
+                                  <td>Nu.56,250</td>
+                                </tr>
+                                <tr>
+                                  <td>Ugyen</td>
+                                  <td>Accountant</td>
+                                  <td>Punakha</td>
+                                  <td>41</td>
+                                  <td>2010/02/27</td>
+                                  <td>Nu.103,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Gyeltshen</td>
+                                  <td>Sales Boys</td>
+                                  <td>Thimphu</td>
+                                  <td>24</td>
+                                  <td>2013/07/14</td>
+                                  <td>Nu.26,500</td>
+                                </tr>
+                                <tr>
+                                  <td>Sherab</td>
+                                  <td>Sales Girl</td>
+                                  <td>Thimphu</td>
+                                  <td>23</td>
+                                  <td>2012/11/13</td>
+                                  <td>Nu.23,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Sapuna</td>
+                                  <td>Designer</td>
+                                  <td>Thimphu</td>
+                                  <td>39</td>
+                                  <td>2011/06/27</td>
+                                  <td>Nu.83,000</td>
+                                </tr>
+                                <tr>
+                                  <td>Tshomo</td>
+                                  <td>Customer Support</td>
+                                  <td>Thimphu</td>
+                                  <td>27</td>
+                                  <td>2011/01/25</td>
+                                  <td>Nu.30,000</td>
+                                </tr>
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Position</th>
+                                  <th>Store</th>
+                                  <th>Age</th>
+                                  <th>Start date</th>
+                                  <th>Salary</th>
+                                </tr>
+                              </tfoot>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/script.js"></script>
+       
+</body>
+
+</html>

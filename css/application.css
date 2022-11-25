@@ -1,0 +1,48 @@
+*{
+    align-items: center;
+    justify-content: center;
+}
+html{
+    padding: 0px;
+    margin-left: 0px;
+    background-color: khaki;
+}
+
+body{
+    background-color: floralwhite;
+    justify-content: center;
+}
+.form-group{
+    background-color: moccasin;
+    width: 250px;
+   
+}
+.form-control{
+    height: 50px;
+    width: 800px;
+    background-color: skyblue;
+}
+
+@media (max-width: 799px){
+    .form-group{
+        width: 780px;
+    }
+    .form-control{
+        min-width: 600px;
+    }
+    .form{
+        width: 1400px;
+    }
+}
+
+@media(max-width: 477px){
+    .form-group{
+        min-width: 400px;
+    }
+    .form-control{
+        min-width: 200px;
+    }
+    .form{
+        justify-content: center;
+    }
+}

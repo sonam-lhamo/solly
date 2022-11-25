@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Solly</title>
+</head>
+<style>
+    *{
+    padding:0;
+    margin:0
+}
+body{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   
+    
+}
+
+.header{
+    height:60%;
+    width: 100%;
+    color:azure;
+    background-image: url(img/rulehead.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    padding-top:2%;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.ruleslist{
+    padding-top:0%;
+    background-color: #FCDDB0;
+    height: 670px;
+    text-align: center;
+    
+}
+p{
+    padding: 1%;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .col .col-install{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .col-install .row img{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    padding-bottom: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    padding-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .col-install .row img{
+    border: 1px solid #088178;
+    border: radius 4px;
+}
+footer .col-install{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 799px){
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }   
+    #feature{
+        justify-content: center;
+    }
+    #feature .fe-box{
+        margin: 15px 15px;
+    }
+    #product1 .pro-container{
+        justify-content: center;
+    }
+    #product1 .pro{
+        margin: 15px;
+    }
+    #banner{
+        height: 20vh;;
+    }
+    #sm-banner .banner-box{
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3{
+        padding:0 40px;
+    }
+    #banner .banner-box{
+        width: 28%;
+    }
+    #newsletter .form{
+        width: 70%;
+    }
+
+}
+
+@media(max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+    #header{
+        padding: 10px 30px;
+    }
+    h2{
+       font-size: 32px; 
+    }
+    h1{
+        font-size: 38px;
+    }
+    #hero{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .pro{
+        width: 100%;
+    }
+    #banner{
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2{
+        margin-top: 20px;
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box{
+        width: 100%;
+    }
+    #newsletter{
+        padding: 40px 20px;
+    }
+    #newsletter .form{
+        width: 100%;
+    }
+    
+}
+</style>
+<body>
+    <header>
+        
+    </header>
+    <div class="container">
+        <div class="header">
+            
+        </div>
+        <div class="ruleslist">
+            <p>1. Each employee must act in accordance with theOrganization’s policies, 
+                orders, rules,regulations, guidelines etc. applicable from time to time</p>
+            <p>2. TheOrganizationexpects each employee to maintain proper decorum. 
+                Employees areexpected to conduct themselves on the job in a manner that contributes 
+                to operatingeffectiveness, productivity, safety and a harmonious work environment.</p>
+            <p>3. The duty must be performed in good faith and a brief reporting of the work 
+                done in the entireday must be given to the Lead/Manager/head office.</p>
+            <p>4. Proper registers must be maintained for easy tracking and record keeping.</p>
+            <p>5. No employee shall be under the influence of or using alcoholic beverages 
+                including drinkingsuch beverages during the work hours. Any employee arriving
+                 to work under the influence of alcohol or an illegal substance will not be permitted to work</p>
+            <p>6. No employee shall drive aOrganization’s vehicle or operate any equipment while under theinfluence of alcohol.</p>
+            <p>7. Employees who will be late or absent from work must inform their Supervisor at least two
+                 (2)hours prior to normal starting time.</p>
+            <p>8. Under no circumstances should employees leave the assigned work area early withoutexpress permission from a Supervisor.</p>
+            <p>9. Employees who work late or on overtime must ensure that all lights, air-conditions
+                 andEquipment's are shut off when they leave the work place.</p>
+            <p>10. Dress code is to be followed strictly. Employees must wear their uniforms
+                 at locations whereuniforms are required. You are expected to look neat and presentable while on the job.</p>
+            <p>11. An increment based on individual performance shall be given every year.</p>
+            <p>12. If employees do not meet theOrganization’s expectations of performance or conduct,
+                necessary corrective action may be taken. It is within management’s discretion
+                 to determinewhat measure would be appropriate under each circumstance</p>
+        </div>
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="img/logo.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> Semtokha Road, Street 32, Thimphu, Bhutan</p>
+                <p><strong>Phone:</strong>+975-17461840 / +975-17456757</p>
+                <p><strong>Hours:</strong>9:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Orders</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col-install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/a1.png" alt="">
+                    <img src="img/a2.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay1.png" alt="">
+                <img src="img/pay2.png" alt="">
+                <img src="img/pay3.jpg" alt="">
+                <img src="img/b1.png" alt="">
+            </div>
+        </footer
+    </div>
+   
+    
+    
+    
+</body>
+</html>
